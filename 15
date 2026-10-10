@@ -1,0 +1,9 @@
+
+# Detect OS and service versions
+nmap -O -sV 192.168.1.100
+
+# Scan specific ports
+nmap -O -sV -p 135,139,445,3389 192.168.1.100
+
+# Save the output to a file
+nmap -O -sV -oN scan_result.txt 192.168.1.100
